@@ -1,0 +1,54 @@
+.WeatherBox {
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #211a1dff;
+}
+
+.division1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+}
+
+.temp {
+    font-size: 8rem;
+    color: #1b98e0ff;
+}
+
+.feelslike {
+    font-size: 1.5rem;
+    color: #1b98e0ff;
+}
+
+.division2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40%;
+}
+
+.card {
+    background-color: #b7c3f3ff;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1.5rem 2rem;
+    width: 20%;
+    height: 50%;
+}
+
+.cardheading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #211a1dff;
+    margin-bottom: 10px;
+
+}
+
+.cardtext {
+    font-size: 1.3rem;
+    color: #211a1dff;
+}

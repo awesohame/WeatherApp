@@ -1,7 +1,14 @@
-.root {
+.SearchBox {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    margin-top: 0px;
+    padding: 30px;
+}
+
+.heading {
+    font-size: 3rem;
 }
 
 .box {

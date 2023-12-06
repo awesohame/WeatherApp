@@ -42,7 +42,7 @@ export default function SearchBox() {
     }
 
     return (
-        <div className="root">
+        <div className="SearchBox">
             <div className="box">
                 <h1 className="heading">Search for the weather</h1>
                 <form className="form" onSubmit={handleSubmit}>
