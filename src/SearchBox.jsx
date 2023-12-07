@@ -4,18 +4,19 @@ import Stack from '@mui/material/Stack';
 import { useState } from 'react';
 import './SearchBox.css';
 
-export default function SearchBox() {
+export default function SearchBox({ updateData }) {
     let [city, setCity] = useState('');
 
     let handleCityChange = (evt) => {
         setCity(evt.target.value);
     };
 
-    let handleSubmit = (evt) => {
+    let handleSubmit = async (evt) => {
         evt.preventDefault();
         console.log(city);
-        setCity('');
-        getWeather();
+        setCity(city);
+        let usabledata = await getWeather();
+        updateData(usabledata);
     };
 
     const url = "https://api.openweathermap.org/data/2.5/weather";
@@ -37,7 +38,10 @@ export default function SearchBox() {
             sunrise: data.sys.sunrise,
             sunset: data.sys.sunset,
             weather: data.weather[0].main,
+            name: data.name,
         }
+
+        return usabledata;
 
     }
 
